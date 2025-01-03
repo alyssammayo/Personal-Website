@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <heead> 
+
+        <title>Page Title</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            a:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block
+            }
+        
+            a:hover, a:active {
+                background-color: red;
+            }
+        </style>
+
+    </heead>
+
+    <body>
+
+        <!-- Link Examples --> 
+        
+        <a href="link">Link</a>
+
+        <a href="link" target="_blank">Link</a>
+
+        <a href="Link">
+            <img src="picture.gif" alt="Image" style="width:20px; height:25px;">
+        </a>
+
+        <a href="mailto:someone@example.com">Send email</a>
+
+        <button onclick="document.location='doc.asp' ">Title</button>
+
+        <a href="Link" title="Link Example"> Visit The Link Example </a>
+        
+        <a href="default.asp" target="_blank">This is a link</a>
+
+
+        <!-- Link Examples Ends -->
+
+        <!-- Imgage Placeholder-->
+         <img scr="imagesource" alt="imgalttext">
+
+        
+
+        <!-- Paragraph Examples-->
+
+        <h1>Heading</h1>
+        <p>Paragraph One</p>
+        <hr>
+        <p>Paragraph Two</p>
+        <hr>
+        <p>Paragraph Three</p>
+        <hr>
+
+        
+
+    </body>
+
+</html>
+
+
+
+<!-- Write your comments here-->
+
+<!--
+Notes From W3Schools
+
+
+Links:
+HTML Links - The Target Attribute
+By default, the linked paged will be displayed in the current browser window. To change this, 
+you must specify another target for the link.
+
+The target attribute specfies where to open the linked document
+
+The target attribute can have one of the following values:
+_self       - Default. Opens the doc in the same window/tab as it was clicked
+_blank      - Opens the doc in a new window of tab
+_parent     - Opens the doc in the parent frame
+_top        - Opens the doc in the full body of the window
+
+Use an Image as a Linke:
+To use an image as a link, just put the <img> tag inside the <a> tag
+Example:
+<a href="Link">
+    <img src="" alt="Image" style="width:20px; height:25px;">
+</a>
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+Example:
+<a href="mailto:someone@example.com">Send email</a>
+
+Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code.
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+Example:
+<button onclick="document.location='doc.asp' ">Title</button>
+
+Link Titles
+The title attribute specifies extra information about an element. 
+The information is most often shown as a tooltp text when the mouse over the element.
+Example:
+<a href="Link" title="Link Example"> Visit The Link Example </a>
+
+Link Buttons
+A link can also be styled as a button, by using CSS:
+Example:
+<style>
+    a:link, a:visted {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block
+    }
+
+    a:hover, a:active {
+        background-color: red;
+    }
+</style>
+
+
+
+
+
+Color Stuff:
+
+An RGBA color value is specfied with:
+rgba (red, green, blue, alpha)
+
+For Transparent Backgrounds. Notice how the last number has values of 0 to 1.
+Try One of The Following:
+background-color:rgba(255, 0, 0);
+rgba(255, 99, 71, 0.2);
+rgba(255, 99, 71, 0.4);
+rgba(255, 99, 71, 0.6);
+rgba(255, 99, 71, 0.8);
+rgba(255, 99, 71, 1);
+
+
+
+HEX Color Values:
+#rrggbb
+rr = red, gg = green, bb = blue
+between 00 and ff
+#ff000 = red, #00ff00 = green, #0000ff = blue
+#000000 = black, #ffffff = white
+
+
+
+HSL Color Values:
+hsl (hue, saturation, lightness)
+Hue is a degree on the color wheel from 0 to 360. Where 0 is red, 120 is green, and 240 is blue.
+Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+Lightness is also a percentage value. 0% is black, and 100% is white.
+
+Saturation:
+Can be described as the intensity of a color
+100% is pure color, no shades of gray.
+50% is 50% gray, but you can still see the color.
+0% is completely gray; you can no longer see the color.
+
+Lightness:
+Can be described as how much light you want to give the color, where: 
+0% = no light (black), 50% = 50% light (neighter dark or light), 100% = full lightness (white)
+Examples:
+hsl(0, 100%, 0%);
+hsl(0, 100%, 25%);
+hsl(0, 100%, 50%);
+hsl(0, 100%, 75%);
+hsl(0, 100%, 90%);
+hsl(0, 100%, 100%);
+
+Shades of Gray
+Are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades:
+hsl(0, 0%, 20%);
+hsl(0, 0%, 30%);
+hsl(0, 0%, 40%);
+hsl(0, 0%, 60%);
+hsl(0, 0%, 70%);
+hsl(0, 0%, 90%);
+
+
+HSLA Color Values
+Are an extension of HSL color values, with an Aplha channel - which specifies the opacity for a color
+
+An HSLA color value is specified with:
+hsla(hue, saturation, lightness, alpha)
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transpararent at all)
+Example:
+hsla(9, 100%, 64%, 0);
+hsla(9, 100%, 64%, 0.2);
+hsla(9, 100%, 64%, 0.4);
+hsla(9, 100%, 64%, 0.6);
+hsla(9, 100%, 64%, 0.8);
+hsla(9, 100%, 64%, 1);
+
+Cool combo:
+hsla(223, 100%, 11%, 0.8);
+hsla(202, 50%, 48%, 0.8);
+
+-->
